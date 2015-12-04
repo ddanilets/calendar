@@ -19,10 +19,10 @@ function CheckForTodayAndSet(){
 }
 function AddEvent(date,name,visitors,description){
 	events[events.length]=new Event(date,name,visitors,description);
-	push();
+	pushEvents();
 }
 function showEvents(){
-	if (pull())
+	if (pullEvents())
 	{
 	events.forEach(function(value,key,events){
 		setEventOnDate(value);
@@ -30,7 +30,7 @@ function showEvents(){
 	}
 }
 function eventDelete(day,month,year){
-	if (pull())
+	if (pullEvents())
 	{
 	var newEvents=events;
 	events.forEach(function(value,key,events){
@@ -41,11 +41,11 @@ function eventDelete(day,month,year){
 			newEvents.splice(key,1);
 	});
 	events=newEvents;
-	push();
+	pushEvents();
 	}
 }
 function eventSearch(day,month,year){
-	if (pull())
+	if (pullEvents())
 	{
 		var res;
 	events.forEach(function(value,key,events){
