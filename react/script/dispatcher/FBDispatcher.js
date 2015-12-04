@@ -15,7 +15,6 @@
 
 var invariant = require('invariant');
 
-export type DispatchToken = string;
 
 var _prefix = 'ID_';
 
