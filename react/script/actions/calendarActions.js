@@ -1,6 +1,4 @@
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var appConstants = require('../constants/appConstants');
-
+/** @jsx React.DOM */
 var calendarActions = {
 	changeSearch: function(search) {
 		AppDispatcher.handleAction({

@@ -1,10 +1,3 @@
-var React = require('react');
-var moment = require('moment-holidays');
-var Days = require('./Days');
-var TaskList = require('./TaskList');
-var TaskSearch = require('./TaskSearch');
-var Calendar = require('node-calendar');
-var calendarActions = require('../actions/calendarActions');
 
 var Month = React.createClass({
 	handleUpdateMonth: function(update) {

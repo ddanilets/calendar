@@ -1,8 +1,6 @@
-var AppDispatcher = require('../dispatcher/dispatcher');
-var appConstants = require('../constants/constants');
-var objectAssign = require('react/lib/Object.assign');
+/** @jsx React.DOM */
 var EventEmitter = require('events').EventEmitter;
-var moment = require('moment');
+
 
 var CHANGE_EVENT = 'change';
 

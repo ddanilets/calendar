@@ -1,6 +1,4 @@
 /** @jsx React.DOM */
-var React = require('react');
-var Cal = require('./components/Cal');
 
 var App = React.createClass({
 	render: function() {

@@ -1,8 +1,4 @@
-var React = require('react');
-var Tasks = require('./Tasks');
-var Occasions = require('./Occasions');
-var calendarActions = require('../actions/calendarActions');
-
+/** @jsx React.DOM */
 var TaskList = React.createClass({
 	componentWillMount: function() {
 		calendarActions.selectDay(null, this.props.days[this.props.moment.today])

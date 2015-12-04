@@ -1,7 +1,4 @@
-var Occasions = require('./Occasions');
-var Tasks = require('./Tasks');
-var calendarActions = require('../actions/calendarActions');
-
+/** @jsx React.DOM */
 var Days = React.createClass({
 	handleSelectDay: function(index, day) {
 		calendarActions.selectDay(index, day);

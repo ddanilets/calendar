@@ -1,9 +1,4 @@
-var React = require('react');
-var moment = require('moment');
-var Month = require('./Month');
-var calendarStore = require('../stores/calendarStore');
-var calendarActions = require('../actions/calendarActions');
-
+/** @jsx React.DOM */
 var Cal = React.createClass({
 	getInitialState: function() {
 		return ({

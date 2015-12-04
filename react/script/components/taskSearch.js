@@ -1,7 +1,4 @@
-var React = require('react');
-var Tasks = require('./Tasks');
-var Occasions = require('./Occasions');
-var calendarActions = require('../actions/calendarActions');
+/** @jsx React.DOM */
 
 var TaskSearch = React.createClass({
 	handleChange: function(e) {
