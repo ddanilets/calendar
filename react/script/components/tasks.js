@@ -23,5 +23,3 @@ var Tasks = React.createClass({
 		)
 	}
 })
-
-module.exports = Tasks;

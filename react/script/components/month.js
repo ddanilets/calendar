@@ -116,5 +116,3 @@ var Month = React.createClass({
 		)
 	}
 });
-
-module.exports = Month;

@@ -41,5 +41,3 @@ var Days = React.createClass({
 		)
 	}
 });
-
-module.exports = Days;

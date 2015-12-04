@@ -25,5 +25,3 @@ var calendarActions = {
 		});
 	}
 };
-
-module.exports = calendarActions;

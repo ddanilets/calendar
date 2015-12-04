@@ -8,5 +8,3 @@ AppDispatcher.handleAction = function(action) {
 		action: action
 	});
 };
-
-module.exports = AppDispatcher;

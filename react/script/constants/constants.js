@@ -5,5 +5,3 @@ var appConstants = {
 	SELECT_DAY: "SELECT_DAY"
 
 };
-
-module.exports = appConstants;

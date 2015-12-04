@@ -110,5 +110,3 @@ AppDispatcher.register(function(payload){
 			return true;
 	}
 });
-
-module.exports = calendarStore;

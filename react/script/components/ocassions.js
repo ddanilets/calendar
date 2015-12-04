@@ -18,5 +18,3 @@ var Occasions = React.createClass({
 		)
 	}
 });
-
-module.exports = Occasions;

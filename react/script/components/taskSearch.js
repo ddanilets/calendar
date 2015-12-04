@@ -41,5 +41,3 @@ var TaskSearch = React.createClass({
 		)
 	}
 })
-
-module.exports = TaskSearch;

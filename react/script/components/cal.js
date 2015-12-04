@@ -28,5 +28,3 @@ var Cal = React.createClass({
 		)
 	}
 });
-
-module.exports = Cal;
