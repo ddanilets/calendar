@@ -2,18 +2,14 @@
 <head>
 <meta content="text/html; charset=utf-8">
 <link rel="stylesheet" href="style.css">
+<script src="react-0.11.2/build/JSXTransformer.js"></script>
+<script src="react-0.11.2/build/react.js"></script>
+<script src="script/react.js"type="text/jsx"></script>
 </head>
 <body>
-<div class="header">
-<div class="button">
-<button name="add" onClick="showAddFast()">Добавить
-</button> 
-<button name="refresh" onClick="MakeCalendar()">Обновить</button>
-</div>
-<div id="search">
-<img id="search-img" src="search.png">
-<input id="search-field" type="text" placeholder="Событие, дата или участник">
-</div>
+<div class="header" id="header">
+<div id="buttons"></div>
+<div id="searchDiv"></div>
 </div>
 <div class="calendar">
 <div class="date-line">
