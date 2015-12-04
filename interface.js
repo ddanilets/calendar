@@ -236,6 +236,11 @@ function createEventWithForm(form){
 		var description="";
 	}
 	AddEvent(date,name,visitors,description);
+	form.name.value="";
+	form.date.value="";
+	form.visitors.value="";
+	form.description.value="";
+	form.description.innerHTML="";
 }
 function setEventOnDate(event){
 	var year=parseInt(event.date.slice(0,4));
