@@ -1,3 +1,4 @@
+/** @jsx React.DOM */
 var Occasions = React.createClass({
 	render: function() {
 		if (this.props.occasions.length > 0) {

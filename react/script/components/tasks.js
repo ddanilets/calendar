@@ -1,3 +1,4 @@
+/** @jsx React.DOM */
 var Tasks = React.createClass({
 	render: function() {
 		if (this.props.tasks.length > 0) {

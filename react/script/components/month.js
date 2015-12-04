@@ -1,4 +1,4 @@
-
+/** @jsx React.DOM */
 var Month = React.createClass({
 	handleUpdateMonth: function(update) {
 		calendarActions.updateMonth(update);
