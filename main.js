@@ -1,0 +1,4 @@
+function load(){
+	drawOn();
+}
+load();

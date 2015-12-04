@@ -1,0 +1,91 @@
+﻿<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+<div class="button">
+<button name="add" onClick="showAddFast()">Добавить
+</button> 
+<button name="refresh" onClick="MakeCalendar()">Обновить</button>
+</div>
+<div id="search">
+<img id="search-img" src="search.png">
+<input id="search-field" type="text" placeholder="Событие, дата или участник">
+</div>
+</div>
+<div class="calendar">
+<div class="date-line">
+<div class="scroll-button">
+<button name="prev" onClick="MoveLeft()"><
+</button>
+</div>
+<div id="date" month="-1" year="-1">
+
+</div>
+<div class="scroll-button">
+<button name="next" onclick="MoveRight()">>
+</button>
+</div>
+<form class="today-button">
+<button name="today" onClick="Today()">
+Сегодня
+</form>
+</div>
+</div>
+<div class="calendar-table">
+<table cellpadding="0" cellspacing="0">
+<tbody id="calendar-table-base">
+</tbody>
+</table>
+</div>
+</div>
+<div id="addButtonTrigger" class="tooltip topArrow">
+<div id="closeAddFast" onclick="hideAddFast()">
+x
+</div>
+<form id="addButtonForm" method="post">
+<input id="addFastText" type="text" name="addFastText" placeholder="02.11.15 12:00 День Рождения">
+<button id="createFast" onclick="addFast(this.form)">Создать</button>
+</form>
+</div>
+<div id="addEvent" class="tooltip leftArrow">
+<div id="closeAddEvent" onclick="hideAddEvent()">
+x
+</div>
+<form id="addEventForm" method="post" name="addEvent" >
+<input class="addEventTextBox" id="addEventEventName" type="text" name="eventName" placeholder="Событие">
+<input class="addEventTextBox" id="addEventEventDate" type="text" name="date" placeholder="01.01.01">
+<input class="addEventTextBox" id="addEventEventTime" type="text" name="time" placeholder="12:00">
+<input class="addEventTextBox" type="text" name="visitors" placeholder="Имена участников">
+<textarea id="addEventTextField" type="text" name="description" placeholder="Описание"></textarea>
+<button id="okEvent" onclick="createEventWithForm(this.form)">Готово</button>
+<button id="clearForm" onclick="">Удалить</button>	
+</form>
+</div>
+<div id="openEvent" class="tooltip leftArrow rightArrow">
+<div id="closeOpenEvent" onclick="hideOpenEvent()">
+x
+</div>
+<form id="openEventForm" method="post" name="openEvent" >
+<p class="openEventLabel" id="openEventEventName"></p>
+<p class="openEventLabel" id="openEventEventDate"></p>
+<p class="openEventLabel" id="openEventEventTime"></p>
+<p class="openEventLabel" id="openEventEventVisitors"></p>
+<textarea id="openEventTextField" type="text" name="description" placeholder="Описание"></textarea>
+<button id="okEvent" onclick="editEventWithForm(this.form)">Готово</button>
+<button id="clearForm" onclick="deleteEventWithForm()">Удалить</button>	
+</form>
+</div>
+<!-- <script src="react-0.11.2/build/JSXTransformer.js"></script>
+<script src="react-0.11.2/build/react.js"></script> -->
+<!-- <script type="text/jsx">
+/** @jsx React.DOM */
+</script> -->
+<script src="dataAccessLayer.js"></script>
+<script src="businessLogic.js"></script>
+<script src="interface.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
