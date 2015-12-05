@@ -70,8 +70,7 @@ var updateMonth = function(update) {
 	}
 
 };
-
-var calendarStore = objectAssign({}, EventEmitter.prototype, {
+var calendarStore = {
 	addChangeListener: function(cb) {
 		this.on(CHANGE_EVENT, cb);
 	},
@@ -88,7 +87,7 @@ var calendarStore = objectAssign({}, EventEmitter.prototype, {
 		return _store.selectedDay;
 	}
 });
-
+MicroEvent.mixin(calendarStore); 
 AppDispatcher.register(function(payload){
 	var action = payload.action;
 	switch(action.actionType){
