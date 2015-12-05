@@ -4,13 +4,12 @@ var Calendar = function(){
 	{
 		month-=1;
 		var date=new Date(year,month);
-		var lastDay=new Date(year,month,0);
+		var lastDay=new Date(year,month+1,0);
 		var dayOfWeek=new Date(year,month).getDay();
 		var days=[];
 		if (dayOfWeek==0)
 			dayOfWeek=7;
-		var k=dayOfWeek-1;
-		for (var i=1;i<lastDay.getDate()+k+6-lastDay.getDay();i++)
+		for (var i=1;i<lastDay.getDate()+k+7-lastDay.getDay();i++)
 		{
 					var day={};
 			if (i<k)	
@@ -18,7 +17,7 @@ var Calendar = function(){
 				curDate=new Date(year,month,k-i);
 			}
 			else{
-				curDate=new Date(year,month,i+k-6);
+				curDate=new Date(year,month,i+k-7);
 			}
 			alert(curDate.getDate());
 			day.year=curDate.getFullYear();
