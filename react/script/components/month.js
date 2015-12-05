@@ -20,6 +20,7 @@ var Calendar = function(){
 			else{
 				curDate=new Date(year,month,i+k-6);
 			}
+			alert(curDate.getDate());
 			day.year=curDate.getFullYear();
 			day.monthNum=curDate.getMonth();
 			day.monthName=_months[curDate.getMonth()];
