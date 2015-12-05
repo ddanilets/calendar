@@ -63,10 +63,10 @@ var updateMonth = function(update) {
 };
 var calendarStore = function(){ 
 	this.addChangeListener= function(cb) {
-		this.on(CHANGE_EVENT, cb);
+		this.bind(CHANGE_EVENT, cb);
 	},
 	this.removeChangeListener= function(cb) {
-		this.removeListener(CHANGE_EVENT, cb);
+		this.unbind(CHANGE_EVENT, cb);
 	},
 	this.getMoment= function() {
 		return _store.moment;
