@@ -71,19 +71,19 @@ var updateMonth = function(update) {
 
 };
 var calendarStore = function(){ 
-	addChangeListener: function(cb) {
+	addChangeListener= function(cb) {
 		this.on(CHANGE_EVENT, cb);
 	},
-	removeChangeListener: function(cb) {
+	removeChangeListener= function(cb) {
 		this.removeListener(CHANGE_EVENT, cb);
 	},
-	getMoment: function() {
+	getMoment= function() {
 		return _store.moment;
 	},
-	getSearch: function() {
+	getSearch= function() {
 		return _store.search;
 	},
-	getSelected: function() {
+	getSelected= function() {
 		return _store.selectedDay;
 	}
 };
