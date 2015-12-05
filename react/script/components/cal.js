@@ -1,8 +1,9 @@
 /** @jsx React.DOM */
 var Cal = React.createClass({
+	var x= new calendarStore();
 	getInitialState: function() {
 		return ({
-			moment: calendarStore.getMoment(),
+			moment: x.getMoment(),
 			selectedDay: calendarStore.getSelected(),
 			search: calendarStore.getSearch()
 		})
