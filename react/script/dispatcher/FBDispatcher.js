@@ -34,7 +34,7 @@ var Dispatcher = (function () {
    * a token that can be used with `waitFor()`.
    */
 
- function register()=_createClass(Dispatcher, [{
+ var register=_createClass(Dispatcher, [{
     key: 'register',
     value: function register(callback) {
       var id = _prefix + this._lastID++;
