@@ -13,7 +13,7 @@ var Calendar = function(){
 			var numOfDays=43;
 		}
 		else{
-			var numOfDays==36;
+			var numOfDays=36;
 		}
 		for (var i=1;i<numOfDays;i++)
 		{
