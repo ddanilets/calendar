@@ -46,7 +46,7 @@ var Month = React.createClass({
 				num: days1[index].num,
 			}
 		});
-
+		alert(days[1].num);
 		var tasks = days.map(function(day, index) {
 			if (index % 2 == 0) {
 				return( {
