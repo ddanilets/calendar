@@ -34,6 +34,7 @@ var Dispatcher = (function () {
    * a token that can be used with `waitFor()`.
    */
 
+  function register(){
   _createClass(Dispatcher, [{
     key: 'register',
     value: function register(callback) {
@@ -45,7 +46,8 @@ var Dispatcher = (function () {
     /**
      * Removes a callback based on its token.
      */
-  }, {
+  }])};
+  _createClass(Dispatcher, [{
     key: 'unregister',
     value: function unregister(id) {
       invariant(this._callbacks[id], 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id);
