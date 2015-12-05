@@ -80,8 +80,9 @@ var calendarStore = function(){
 	}
 };
 var microEvent = new MicroEvent();
+var x=new calendarStore();
 microEvent.mixin(calendarStore); 
-calendarStore.trigger("");
+x.trigger("");
 AppDispatcher.register(function(payload){
 	var action = payload.action;
 	switch(action.actionType){
