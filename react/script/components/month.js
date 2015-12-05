@@ -3,7 +3,6 @@ var Calendar = function(){
 	this.itermonthdates=function(year,month)
 	{
 		month-=1;
-		var day={};
 		var date=new Date(year,month);
 		var lastDay=new Date(year,month,0);
 		var dayOfWeek=new Date(year,month).getDay();
@@ -13,6 +12,7 @@ var Calendar = function(){
 		var k=dayOfWeek-1;
 		for (var i=1;i<lastDay.getDate()+k+7-lastDay.getDay();i++)
 		{
+					var day={};
 			if (i<=k)	
 			{			
 				curDate=new Date(year,month,k-i);
@@ -123,13 +123,13 @@ var Month = React.createClass({
 					</div>
 					<div id="days-header">
 							<ul>
-								<li>Sunday</li>
 								<li>Monday</li>
 								<li>Tuesday</li>
 								<li>Wednesday</li>
 								<li>Thursday</li>
 								<li>Friday</li>
 								<li>Saturday</li>
+								<li>Sunday</li>
 							</ul>
 					</div>
 					<Days moment={this.props.moment} days={tasks} selectedDay={this.props.selectedDay} />
