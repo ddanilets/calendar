@@ -82,21 +82,20 @@ var calendarStore = function(){
 var microEvent = new MicroEvent();
 var x=new calendarStore();
 microEvent.mixin(calendarStore); 
-x.trigger("");
 AppDispatcher.register(function(payload){
 	var action = payload.action;
 	switch(action.actionType){
 		case appConstants.CHANGE_SEARCH:
 			changeSearch(action.data);
-			calendarStore.trigger(CHANGE_EVENT);
+			x.trigger(CHANGE_EVENT);
 			break;
 		case appConstants.UPDATE_MONTH:
 			updateMonth(action.data);
-			calendarStore.trigger(CHANGE_EVENT);
+			x.trigger(CHANGE_EVENT);
 			break;
 		case appConstants.SELECT_DAY:
 			selectDay(action.data);
-			calendarStore.trigger(CHANGE_EVENT);
+			x.trigger(CHANGE_EVENT);
 			break;
 		default:
 			return true;
