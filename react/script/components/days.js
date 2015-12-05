@@ -16,7 +16,7 @@ var Days = React.createClass({
 			if (self.props.selectedDay.year == day.year && self.props.selectedDay.monthName == day.monthName && self.props.selectedDay.num == day.num) {
 				classes += ' selected';
 			}
-			if ((index + 1) % 7 == 0) {
+			if ((index) % 7 == 0) {
 				classes += ' last';
 			}
 
