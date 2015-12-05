@@ -19,6 +19,7 @@ var Calendar = function(){
 			else{
 				curDate=new Date(year,month,i+dayOfWeek-7);
 			}
+			alert(curDate);
 			day.year=curDate.getFullYear();
 			day.monthNum=curDate.getMonth();
 			day.monthName=_months[curDate.getMonth()];
@@ -46,7 +47,6 @@ var Month = React.createClass({
 				num: days1[index].num,
 			}
 		});
-		alert(days[1].num);
 		var tasks = days.map(function(day, index) {
 			if (index % 2 == 0) {
 				return( {
