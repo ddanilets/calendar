@@ -4,21 +4,21 @@ var Cal = React.createClass({
 	getInitialState: function() {
 		return ({
 			moment: x.getMoment(),
-			selectedDay: calendarStore.getSelected(),
-			search: calendarStore.getSearch()
+			selectedDay: x.getSelected(),
+			search: x.getSearch()
 		})
 	},
 	componentDidMount: function() {
 		this.setState({
-			selectedDay: calendarStore.getSelected()
+			selectedDay: x.getSelected()
 		});
-		calendarStore.addChangeListener(this._onChange);
+		x.addChangeListener(this._onChange);
 	},
 	_onChange: function() {
 		this.setState({
-			moment: calendarStore.getMoment(),
-			selectedDay: calendarStore.getSelected(),
-			search: calendarStore.getSearch()
+			moment: x.getMoment(),
+			selectedDay: x.getSelected(),
+			search: x.getSearch()
 		});
 	},
 	render: function() {
