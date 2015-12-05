@@ -9,17 +9,16 @@ var Calendar = function(){
 		var days=[];
 		if (dayOfWeek==0)
 			dayOfWeek=7;
-		for (var i=1;i<lastDay.getDate()+dayOfWeek+7-lastDay.getDay();i++)
+		for (var i=1;i<lastDay.getDate()+dayOfWeek+5-lastDay.getDay();i++)
 		{
 					var day={};
 			if (i<dayOfWeek)	
 			{			
-				curDate=new Date(year,month,dayOfWeek-i);
+				curDate=new Date(year,month,i-);
 			}
 			else{
 				curDate=new Date(year,month,i+dayOfWeek-7);
 			}
-			alert(curDate);
 			day.year=curDate.getFullYear();
 			day.monthNum=curDate.getMonth();
 			day.monthName=_months[curDate.getMonth()];
