@@ -9,16 +9,16 @@ var Calendar = function(){
 		var days=[];
 		if (dayOfWeek==0)
 			dayOfWeek=7;
-		for (var i=1;i<lastDay.getDate()+dayOfWeek+5-lastDay.getDay();i++)
+		if ((dayOfWeek==5&&lastDay.getDate==31)||(dayOfWeek>6&&lastDay.getDate>=30)){
+			var numOfDays=43;
+		}
+		else{
+			var numOfDays==36;
+		}
+		for (var i=1;i<numOfDays;i++)
 		{
-					var day={};
-			if (i<=dayOfWeek)	
-			{			
-				curDate=new Date(year,month,i-dayOfWeek+1);
-			}
-			else{
-				curDate=new Date(year,month,i-dayOfWeek+1);
-			}
+			var day={};		
+			curDate=new Date(year,month,i-dayOfWeek+1);
 			day.year=curDate.getFullYear();
 			day.monthNum=curDate.getMonth();
 			day.monthName=_months[curDate.getMonth()];
