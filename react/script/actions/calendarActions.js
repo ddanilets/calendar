@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 var calendarActions = {
 	changeSearch: function(search) {
-		AppDispatcher.dispatch({
+		AppDispatcher.handleAction({
 			actionType: appConstants.CHANGE_SEARCH,
 			data: search
 		});
