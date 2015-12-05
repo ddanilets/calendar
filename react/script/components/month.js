@@ -13,7 +13,7 @@ var Calendar = function(){
 		for (var i=1;i<lastDay.getDate()+k+6-lastDay.getDay();i++)
 		{
 					var day={};
-			if (i<=k)	
+			if (i<k)	
 			{			
 				curDate=new Date(year,month,k-i);
 			}
