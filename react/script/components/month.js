@@ -9,15 +9,15 @@ var Calendar = function(){
 		var days=[];
 		if (dayOfWeek==0)
 			dayOfWeek=7;
-		for (var i=1;i<lastDay.getDate()+k+7-lastDay.getDay();i++)
+		for (var i=1;i<lastDay.getDate()+dayOfWeek+7-lastDay.getDay();i++)
 		{
 					var day={};
-			if (i<k)	
+			if (i<dayOfWeek)	
 			{			
-				curDate=new Date(year,month,k-i);
+				curDate=new Date(year,month,dayOfWeek-i);
 			}
 			else{
-				curDate=new Date(year,month,i+k-7);
+				curDate=new Date(year,month,i+dayOfWeek-7);
 			}
 			day.year=curDate.getFullYear();
 			day.monthNum=curDate.getMonth();
