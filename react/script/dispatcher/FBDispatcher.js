@@ -35,7 +35,7 @@ function Dispatcher() {
    */
 
   this.register=function (callback) {
-      var id = _prefix + this._lastID++;
+      var id = this_prefix + this._lastID++;
       this._callbacks[id] = callback;
       return id;
     };
