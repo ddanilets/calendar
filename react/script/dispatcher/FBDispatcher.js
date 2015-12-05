@@ -34,26 +34,22 @@ function Dispatcher() {
    * a token that can be used with `waitFor()`.
    */
 
-  this.register=function (callback) {
+	this.register=function (callback) {
       var id = this._prefix + this._lastID++;
       this._callbacks[id] = callback;
       return id;
     };
-  _createClass(Dispatcher, [{
-    key: 'unregister',
-    value: function unregister(id) {
+	this.unregister=function(id) {
       invariant(this._callbacks[id], 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id);
       delete this._callbacks[id];
-    }
+    };
 
     /**
      * Waits for the callbacks specified to be invoked before continuing execution
      * of the current callback. This method should only be used by a callback in
      * response to a dispatched payload.
      */
-  }, {
-    key: 'waitFor',
-    value: function waitFor(ids) {
+	this.waitFor=function (ids) {
       invariant(this._isDispatching, 'Dispatcher.waitFor(...): Must be invoked while dispatching.');
       for (var ii = 0; ii < ids.length; ii++) {
         var id = ids[ii];
@@ -65,13 +61,10 @@ function Dispatcher() {
         this._invokeCallback(id);
       }
     }
-
     /**
      * Dispatches a payload to all registered callbacks.
      */
-  }, {
-    key: 'dispatch',
-    value: function dispatch(payload) {
+	this.dispatch=function(payload) {
       invariant(!this._isDispatching, 'Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch.');
       this._startDispatching(payload);
       try {
@@ -84,16 +77,14 @@ function Dispatcher() {
       } finally {
         this._stopDispatching();
       }
-    }
+    };
 
     /**
      * Is this Dispatcher currently dispatching.
      */
-  }, {
-    key: 'isDispatching',
-    value: function isDispatching() {
+	this.isDispatching = function() {
       return this._isDispatching;
-    }
+    };
 
     /**
      * Call the callback stored with the given id. Also do some internal
@@ -101,9 +92,7 @@ function Dispatcher() {
      *
      * @internal
      */
-  }, {
-    key: '_invokeCallback',
-    value: function _invokeCallback(id) {
+	this._invokeCallback=function(id) {
       this._isPending[id] = true;
       this._callbacks[id](this._pendingPayload);
       this._isHandled[id] = true;
@@ -114,9 +103,7 @@ function Dispatcher() {
      *
      * @internal
      */
-  }, {
-    key: '_startDispatching',
-    value: function _startDispatching(payload) {
+	this._startDispatching=function(payload) {
       for (var id in this._callbacks) {
         this._isPending[id] = false;
         this._isHandled[id] = false;
@@ -130,11 +117,8 @@ function Dispatcher() {
      *
      * @internal
      */
-  }, {
-    key: '_stopDispatching',
-    value: function _stopDispatching() {
+	this._stopDispatching=function() {
       delete this._pendingPayload;
       this._isDispatching = false;
-    }
-  }]);
+    };
 };
