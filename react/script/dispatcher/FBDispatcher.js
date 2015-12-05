@@ -27,6 +27,7 @@ function Dispatcher() {
     this._isPending = {};
     this._lastID = 1;
 	this._prefix=0;
+	
 
   /**
    * Registers a callback to be invoked with every dispatched payload. Returns
