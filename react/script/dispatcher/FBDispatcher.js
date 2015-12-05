@@ -135,6 +135,4 @@ function Dispatcher() {
       this._isDispatching = false;
     }
   }]);
-
-  return Dispatcher;
 };
