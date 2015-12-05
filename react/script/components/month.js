@@ -12,9 +12,9 @@ var Calendar = function(){
 		for (var i=1;i<lastDay.getDate()+dayOfWeek+5-lastDay.getDay();i++)
 		{
 					var day={};
-			if (i<dayOfWeek)	
+			if (i<=dayOfWeek)	
 			{			
-				curDate=new Date(year,month,i-);
+				curDate=new Date(year,month,i-k+1);
 			}
 			else{
 				curDate=new Date(year,month,i+dayOfWeek-7);
