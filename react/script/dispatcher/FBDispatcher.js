@@ -1,4 +1,4 @@
-var _createClass = (function () {
+function _createClass() {
 	function defineProperties(target, props) {
 		for (var i = 0; i < props.length; i++) {
 			var descriptor = props[i];
@@ -15,7 +15,7 @@ var _createClass = (function () {
 		if (staticProps) defineProperties(Constructor, staticProps); 
 			return Constructor; 
 	}; 
-	});
+	};
 _createClass();
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -34,7 +34,7 @@ var Dispatcher = (function () {
    * a token that can be used with `waitFor()`.
    */
 
- register: _createClass(Dispatcher, [{
+  _createClass(Dispatcher, [{
     key: 'register',
     value: function register(callback) {
       var id = _prefix + this._lastID++;
@@ -45,8 +45,7 @@ var Dispatcher = (function () {
     /**
      * Removes a callback based on its token.
      */
-  }]);
-  _createClass(Dispatcher, [{
+  }, {
     key: 'unregister',
     value: function unregister(id) {
       invariant(this._callbacks[id], 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id);
