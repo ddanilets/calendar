@@ -22,11 +22,7 @@ var Days = React.createClass({
 
 			return (<div key={index} className={classes} onClick={self.handleSelectDay.bind(null, index, day)}>
 						<span className="num">{day.num}</span>
-						<div className="holidays">
-							<h3>{day.holiday}</h3>
-						</div>
 						<div className="info">
-							<Occasions occasions={day.occasions}/>
 							<Tasks tasks={day.tasks}/>
 						</div>
 					</div>

@@ -54,13 +54,9 @@ var Month = React.createClass({
 					monthName: day.monthName,
 					num: day.num,
 					holiday: day.holiday,
-					occasions: [],
-					tasks: [
-						{
-							taskName: 'Ride to hockey',
-							help: false
-						}
-					]
+					tasks: [{
+							taskName: 'Ride to hockey'
+					}]
 				})
 			}
 			else if (index % 3 == 0 ) {
@@ -69,21 +65,12 @@ var Month = React.createClass({
 					monthNum: day.monthNum,
 					monthName: day.monthName,
 					num: day.num,
-					holiday: day.holiday,
-					occasions: [
-						{
-							occasionName: 'Birthday'
-						}
-					],
 					tasks: [
 						{
-							taskName: 'Walk the dogs',
-							help: false
-
+							taskName: 'Walk the dogs'
 						},
 						{
-							taskName: 'Dinner for tonight',
-							help: true
+							taskName: 'Dinner for tonight'
 						}
 					]
 				})
@@ -95,16 +82,12 @@ var Month = React.createClass({
 					monthNum: day.monthNum,
 					monthName: day.monthName,
 					num: day.num,
-					holiday: day.holiday,
-					occasions: [],
 					tasks: [
 						{
-							taskName: 'Doctor appt',
-							help: false
+							taskName: 'Doctor appt'
 						},
 						{
-							taskName: 'Shovel snow',
-							help: true
+							taskName: 'Shovel snow'
 						}
 					]
 
