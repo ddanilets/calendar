@@ -22,7 +22,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Dispatcher = (function () {
   function Dispatcher() {
     _classCallCheck(this, Dispatcher);
-	this.register={};
     this._callbacks = {};
     this._isDispatching = false;
     this._isHandled = {};
@@ -35,7 +34,7 @@ var Dispatcher = (function () {
    * a token that can be used with `waitFor()`.
    */
 
-  _createClass(Dispatcher, [{
+ function register()=_createClass(Dispatcher, [{
     key: 'register',
     value: function register(callback) {
       var id = _prefix + this._lastID++;
@@ -46,7 +45,8 @@ var Dispatcher = (function () {
     /**
      * Removes a callback based on its token.
      */
-  }, {
+  }]);
+  _createClass(Dispatcher, [{
     key: 'unregister',
     value: function unregister(id) {
       invariant(this._callbacks[id], 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id);
