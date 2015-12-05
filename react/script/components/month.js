@@ -37,14 +37,15 @@ var Month = React.createClass({
 
 		var calendar = new Calendar();
 
-		var days = calendar.itermonthdates(this.props.moment.year, this.props.moment.num).forEach(item,key,calendar.itermonthdates(this.props.moment.year, this.props.moment.num)) {
-				{
-				year: item.year,
-				monthNum: item.monthNum + 1,
-				monthName: item.monthName,
-				num: item.num,
-				}
-		});
+		var days1 = calendar.itermonthdates(this.props.moment.year, this.props.moment.num);
+		var days = calendar.itermonthdates(this.props.moment.year, this.props.moment.num);
+		days.forEach(value,index,days)
+			value={
+				year: days1[index].year,
+				monthNum: days1[index].monthNum + 1,
+				monthName: days1[index].monthName,
+				num: days1[index].num,
+			};
 
 		var tasks = days.map(function(day, index) {
 			if (index % 2 == 0) {
