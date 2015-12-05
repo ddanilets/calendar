@@ -35,7 +35,7 @@ var Month = React.createClass({
 	},
 	render: function() {
 
-		var calendar = new Calendar.();
+		var calendar = new Calendar();
 
 		var days = calendar.itermonthdates(this.props.moment.year, this.props.moment.num).map(function(item) {
 			return(
