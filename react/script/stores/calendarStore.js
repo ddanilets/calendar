@@ -69,7 +69,7 @@ var calendarStore = function(){
 	this.removeChangeListener= function(cb) {
 		this.removeListener(CHANGE_EVENT, cb);
 	},
-	this.getMoment= function() {
+	getMoment= function() {
 		return _store.moment;
 	},
 	this.getSearch= function() {
