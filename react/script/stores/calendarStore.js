@@ -86,7 +86,7 @@ var calendarStore = {
 	getSelected: function() {
 		return _store.selectedDay;
 	}
-});
+};
 MicroEvent.mixin(calendarStore); 
 AppDispatcher.register(function(payload){
 	var action = payload.action;
