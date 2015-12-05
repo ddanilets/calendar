@@ -17,7 +17,7 @@ var Calendar = function(){
 				curDate=new Date(year,month,i-dayOfWeek+1);
 			}
 			else{
-				curDate=new Date(year,month,i+dayOfWeek-7);
+				curDate=new Date(year,month,i-dayOfWeek+1);
 			}
 			day.year=curDate.getFullYear();
 			day.monthNum=curDate.getMonth();
