@@ -14,7 +14,6 @@ var calendarActions = {
 				monthName: day.monthName,
 				num: day.num,
 				tasks: day.tasks,
-				occasions: day.occasions
 			}
 		});
 	},

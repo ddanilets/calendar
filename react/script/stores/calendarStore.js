@@ -37,11 +37,10 @@ var _store = {
 		year: new Date().getFullYear()
 	},
 	selectedDay: {
-		year: null,
-		month: null,
-		num: null,
-		tasks: [],
-		occasions: []
+		year: 0,
+		month: 0,
+		num: 0,
+		tasks: []
 	},
 	search: ''
 };
