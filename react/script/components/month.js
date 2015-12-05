@@ -46,7 +46,7 @@ var Month = React.createClass({
 				monthName: days1[index].monthName,
 				num: days1[index].num,
 			}
-			alert (days1[index]).num;
+			alert (days1[index].num);
 			alert (value.num);
 		});
 
