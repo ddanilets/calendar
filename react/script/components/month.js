@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 var Calendar = function(){
-	function itermonthdates(year,month)
+	this.itermonthdates=function(year,month)
 	{
 		month-=1;
 		var day={};
