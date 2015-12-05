@@ -46,55 +46,6 @@ var Month = React.createClass({
 				num: days1[index].num,
 			}
 		});
-		var tasks = days.map(function(day, index) {
-			if (index % 2 == 0) {
-				return( {
-					year: day.year,
-					monthNum: day.monthNum,
-					monthName: day.monthName,
-					num: day.num,
-					holiday: day.holiday,
-					tasks: [{
-							taskName: 'Ride to hockey'
-					}]
-				})
-			}
-			else if (index % 3 == 0 ) {
-				return( {
-					year: day.year,
-					monthNum: day.monthNum,
-					monthName: day.monthName,
-					num: day.num,
-					tasks: [
-						{
-							taskName: 'Walk the dogs'
-						},
-						{
-							taskName: 'Dinner for tonight'
-						}
-					]
-				})
-
-			}
-			else {
-				return ( {
-					year: day.year,
-					monthNum: day.monthNum,
-					monthName: day.monthName,
-					num: day.num,
-					tasks: [
-						{
-							taskName: 'Doctor appt'
-						},
-						{
-							taskName: 'Shovel snow'
-						}
-					]
-
-				})
-				
-			}
-		});
 
 		return (
 			<div>
@@ -113,13 +64,13 @@ var Month = React.createClass({
 								<li>Sunday</li>
 							</ul>
 					</div>
-					<Days moment={this.props.moment} days={tasks} selectedDay={this.props.selectedDay} />
+					<Days moment={this.props.moment} days={_tasks} selectedDay={this.props.selectedDay} />
 				</div>
 				<div className="task-list">
-					<TaskList moment={this.props.moment} days={tasks} selectedDay={this.props.selectedDay}/>
+					<TaskList moment={this.props.moment} days={_tasks} selectedDay={this.props.selectedDay}/>
 				</div>
 				<div className="task-search">
-					<TaskSearch search={this.props.search} days={tasks}/>
+					<TaskSearch search={this.props.search} days={_tasks}/>
 				</div>
 			</div>
 		)

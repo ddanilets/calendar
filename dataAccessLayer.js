@@ -29,17 +29,3 @@ function pushDate(){
 	var serDate = JSON.stringify(_date);
 	localStorage["Date"]=serDate;
 }
-function pullEvents(){
-	if (localStorage.getItem('Events')){
-	var serEvents=localStorage["Events"];
-	events = JSON.parse(serEvents);
-	return 1;
-	}
-	else {
-		return 0;
-	}
-}
-function pushEvents(){
-	var serEvents = JSON.stringify(events);
-	localStorage["Events"]=serEvents;
-}

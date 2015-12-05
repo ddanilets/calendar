@@ -1,7 +1,22 @@
 /** @jsx React.DOM */
 
 var CHANGE_EVENT = 'change';
-
+function pullTasks(){
+	if (localStorage.getItem('Tasks')){
+	var serEvents=localStorage["Tasks"];
+	_tasks = JSON.parse(serEvents);
+	return 1;
+	}
+	else {
+		return 0;
+	}
+};
+function pushTasks(){
+	var serEvents = JSON.stringify(_tasks);
+	localStorage["Tasks"]=serEvents;
+};
+var _tasks=[];
+pullTasks();
 var _store = {
 	moment: {
 		todayYear: new Date().getFullYear(),
