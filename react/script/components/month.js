@@ -14,7 +14,7 @@ var Calendar = function(){
 					var day={};
 			if (i<=dayOfWeek)	
 			{			
-				curDate=new Date(year,month,i-k+1);
+				curDate=new Date(year,month,i-dayOfWeek+1);
 			}
 			else{
 				curDate=new Date(year,month,i+dayOfWeek-7);
