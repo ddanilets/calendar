@@ -70,7 +70,7 @@ var updateMonth = function(update) {
 	}
 
 };
-var calendarStore = {
+var calendarStore = function(){ 
 	addChangeListener: function(cb) {
 		this.on(CHANGE_EVENT, cb);
 	},
