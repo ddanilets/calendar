@@ -2,7 +2,6 @@
 
 var CHANGE_EVENT = 'change';
 
-var _months=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
 var _store = {
 	moment: {
 		todayYear: new Date().getFullYear(),
@@ -79,7 +78,8 @@ var calendarStore = function(){
 		return _store.selectedDay;
 	}
 };
-MicroEvent.mixin(calendarStore); 
+var microEvent = new MicroEvent();
+microEvent.mixin(calendarStore); 
 AppDispatcher.register(function(payload){
 	var action = payload.action;
 	switch(action.actionType){
