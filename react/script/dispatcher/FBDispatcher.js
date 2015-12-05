@@ -32,18 +32,11 @@ function Dispatcher() {
    * a token that can be used with `waitFor()`.
    */
 
-  this.register=function(){  _createClass(Dispatcher, [{
-    key: 'register',
-    value: function register(callback) {
+  this.register=function (callback) {
       var id = _prefix + this._lastID++;
       this._callbacks[id] = callback;
       return id;
-    }
-
-    /**
-     * Removes a callback based on its token.
-     */
-  }])};
+    };
   _createClass(Dispatcher, [{
     key: 'unregister',
     value: function unregister(id) {
