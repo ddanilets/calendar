@@ -22,7 +22,7 @@ var Calendar = function(){
 			}
 			day.year=curDate.getFullYear();
 			day.monthNum=curDate.getMonth();
-			day.monthName=_month[curDate.getMonth()];
+			day.monthName=_months[curDate.getMonth()];
 			day.num=curDate.getDate();
 			days[i]=day;
 		}
