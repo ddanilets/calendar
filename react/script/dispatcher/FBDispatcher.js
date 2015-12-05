@@ -22,7 +22,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Dispatcher = (function () {
   function Dispatcher() {
     _classCallCheck(this, Dispatcher);
-
+	this.register={};
     this._callbacks = {};
     this._isDispatching = false;
     this._isHandled = {};
