@@ -45,7 +45,7 @@ var updateMonth = function(update) {
 		_store.moment.year -= 1;
 		_store.moment.num = 12;
 		_store.moment.moment = new Date(_store.moment.year,_store.moment.num - 1);
-		_store.moment.name = _months[_store.moment.num - 1];
+		_store.moment.name = _months[_store.moment.num];
 
 	}
 	else if(newMonth == 13) {
