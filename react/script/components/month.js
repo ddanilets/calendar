@@ -9,6 +9,7 @@ var Calendar = function(){
 		var days=[];
 		if (dayOfWeek==0)
 			dayOfWeek=7;
+		alert(dayOfWeek,lastDay.getDate());
 		if ((dayOfWeek==6&&lastDay.getDate()==31)||(dayOfWeek==7&&lastDay.getDate()>=30)){
 			var numOfDays=43;
 		}
