@@ -15,7 +15,16 @@ function pushTasks(){
 	var serEvents = JSON.stringify(_tasks);
 	localStorage["Tasks"]=serEvents;
 };
-var _tasks=[];
+var _tasks=[{
+	year: "",
+	monthNum: "",
+	monthName: "",
+	num: "",
+	holiday: "",
+	tasks: [{
+				taskName: '""'
+			}]
+}];
 pullTasks();
 var _store = {
 	moment: {
