@@ -19,22 +19,20 @@ function _createClass() {
 _createClass();
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-var Dispatcher = (function () {
-  function Dispatcher() {
+function Dispatcher() {
     _classCallCheck(this, Dispatcher);
     this._callbacks = {};
     this._isDispatching = false;
     this._isHandled = {};
     this._isPending = {};
     this._lastID = 1;
-  }
 
   /**
    * Registers a callback to be invoked with every dispatched payload. Returns
    * a token that can be used with `waitFor()`.
    */
 
-  function register(){
+  this.register()=function{
   _createClass(Dispatcher, [{
     key: 'register',
     value: function register(callback) {
@@ -147,4 +145,4 @@ var Dispatcher = (function () {
   }]);
 
   return Dispatcher;
-})();
+};
