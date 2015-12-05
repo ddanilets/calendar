@@ -100,6 +100,9 @@ var calendarStore = function(){
 	},
 	this.getSelected= function() {
 		return _store.selectedDay;
+	},
+	this.getTasks=function(){
+		return _tasks;
 	}
 };
 var microEvent = new MicroEvent();

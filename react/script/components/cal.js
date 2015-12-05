@@ -5,7 +5,8 @@ var Cal = React.createClass({
 		return ({
 			moment: x.getMoment(),
 			selectedDay: x.getSelected(),
-			search: x.getSearch()
+			search: x.getSearch(),
+			tasks: x.getTasks()
 		})
 	},
 	componentDidMount: function() {
@@ -18,13 +19,14 @@ var Cal = React.createClass({
 		this.setState({
 			moment: x.getMoment(),
 			selectedDay: x.getSelected(),
-			search: x.getSearch()
+			search: x.getSearch(),
+			tasks: x.getTasks()
 		});
 	},
 	render: function() {
 		return (
 			<div>
-				<Month moment={this.state.moment} selectedDay={this.state.selectedDay} search={this.state.search} />
+				<Month moment={this.state.moment} selectedDay={this.state.selectedDay} search={this.state.search} tasks={this.state.tasks} />
 			</div>
 		)
 	}
