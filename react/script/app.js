@@ -12,4 +12,4 @@ var App = React.createClass({
 	}
 });
 
-React.render(<App />, document.getElementById('app'));
+React.renderComponent(<App />, document.getElementById('app'));
