@@ -32,7 +32,7 @@ function Dispatcher() {
    * a token that can be used with `waitFor()`.
    */
 
-  this.register()=function{
+  this.register(){
   _createClass(Dispatcher, [{
     key: 'register',
     value: function register(callback) {

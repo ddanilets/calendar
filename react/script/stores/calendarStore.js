@@ -93,15 +93,15 @@ AppDispatcher.register(function(payload){
 	switch(action.actionType){
 		case appConstants.CHANGE_SEARCH:
 			changeSearch(action.data);
-			calendarStore.emit(CHANGE_EVENT);
+			calendarStore.trigger(CHANGE_EVENT);
 			break;
 		case appConstants.UPDATE_MONTH:
 			updateMonth(action.data);
-			calendarStore.emit(CHANGE_EVENT);
+			calendarStore.trigger(CHANGE_EVENT);
 			break;
 		case appConstants.SELECT_DAY:
 			selectDay(action.data);
-			calendarStore.emit(CHANGE_EVENT);
+			calendarStore.trigger(CHANGE_EVENT);
 			break;
 		default:
 			return true;
