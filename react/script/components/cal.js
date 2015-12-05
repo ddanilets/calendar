@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
+var x=new calendarStore();
 var Cal = React.createClass({
-	var x= new calendarStore();
 	getInitialState: function() {
 		return ({
 			moment: x.getMoment(),
