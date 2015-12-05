@@ -7,10 +7,6 @@ var TaskList = React.createClass({
 		return (
 				<div className="task-list-header">
 					<h2>List for {this.props.selectedDay.monthName} {this.props.selectedDay.num}</h2>
-					<div className="occasions">
-						<h2>Occasions</h2>
-						<Occasions occasions={this.props.selectedDay.occasions} />
-					</div>
 					<div className="tasks">
 						<h2>Tasks</h2>
 						<span className="legend task">Task Filled</span><span className="legend task help">Help Needed</span>
