@@ -8,7 +8,7 @@ var _store = {
 		todayYear: new Date().getFullYear(),
 		todayMonth: new Date().getMonth(),
 		today: new Date().getDate(),
-		moment: new Date().getMoment(),
+		moment: new Date(),
 		num: new Date().getMonth() + 1,
 		name: _months[new Date().getMonth()],
 		year: new Date().getFullYear()
