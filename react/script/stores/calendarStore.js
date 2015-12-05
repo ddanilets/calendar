@@ -64,7 +64,7 @@ var updateMonth = function(update) {
 var calendarStore = function(){ 
 	var self=this;
 	this.addChangeListener= function(cb) {
-		self.bind(CHANGE_EVENT, cb);
+		this.bind(CHANGE_EVENT, cb);
 	},
 	this.removeChangeListener= function(cb) {
 		self.unbind(CHANGE_EVENT, cb);
@@ -80,7 +80,7 @@ var calendarStore = function(){
 	}
 };
 var microEvent = new MicroEvent();
-MicroEvent.mixin(calendarStore); 
+microEvent.mixin(calendarStore); 
 calendarStore.trigger("");
 AppDispatcher.register(function(payload){
 	var action = payload.action;
