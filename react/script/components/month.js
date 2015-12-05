@@ -15,7 +15,6 @@ var Calendar = function(){
 		else{
 			var numOfDays=36;
 		}
-		alert(numOfDays);
 		for (var i=1;i<numOfDays;i++)
 		{
 			var day={};		
