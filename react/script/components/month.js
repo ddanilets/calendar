@@ -8,7 +8,7 @@ var Calendar = function(){
 		var lastDay=new Date(year,month,0);
 		var dayOfWeek=new Date(year,month).getDay();
 		var days=[];
-		if (dayOfWeek=0)
+		if (dayOfWeek==0)
 			dayOfWeek=7;
 		var k=dayOfWeek-1;
 		for (var i=1;i<lastDay.getDate()+k+7-lastDay.getDay();i++)
