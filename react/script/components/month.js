@@ -40,12 +40,10 @@ var Month = React.createClass({
 		var days = calendar.itermonthdates(this.props.moment.year, this.props.moment.num).map(function(item) {
 			return(
 				{
-				year: moment(item).year(),
-				monthNum: moment(item).month() + 1,
-				monthName: moment(item).format('MMMM'),
-				num: moment(item).format('D'),
-				holiday: moment(item).holiday(),
-				
+				year: item.year,
+				monthNum: item.monthNum + 1,
+				monthName: item.monthName,
+				num: item.num,
 				}
 			)
 		});
