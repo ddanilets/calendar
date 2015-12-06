@@ -30,7 +30,7 @@ var AddTask = React.createClass({
 			}
 		}
 		handleAdd.bind(null,data);
-	}
+	},
 	render: function() {
 		var self = this;
 		
