@@ -22,5 +22,11 @@ var calendarActions = {
 			actionType: appConstants.UPDATE_MONTH,
 			data: update
 		});
+	},
+	addTask: function(data){
+		AppDispatcher.handleAction({
+			actionType:appConstants.ADD_TASK,
+			data: data
+		});
 	}
 };

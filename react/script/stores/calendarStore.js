@@ -43,7 +43,18 @@ var _store = {
 		num: "",
 		tasks: []
 	},
-	search: ''
+	search: '',
+	data: {
+		year:"",
+		monthNum:"",
+		monthName:"",
+		num:"",
+		task: {
+				taskName: "",
+				taskHolders: "",
+				taskDescription: ""
+			}
+	}
 };
 
 var changeSearch = function(data) {
@@ -84,6 +95,18 @@ var updateMonth = function(update) {
 	}
 
 };
+var addTask= function(data){
+	var flag=true;
+	_tasks.forEach(function(item,key,_tasks){
+		if(data.num==item.num&&data.monthNum==item.monthNum&&data.year==item.year){
+			item.tasks[item.tasks.length]=data.task;
+			flag=false;
+		};
+	});
+	if (flag){
+		_tasks[_tasks.length]=data;
+	};
+};
 var calendarStore = function(){ 
 	pullTasks();
 	var self=this;
@@ -105,6 +128,9 @@ var calendarStore = function(){
 	this.getTasks=function(){
 		return _tasks;
 	}
+	this.getData=function(){
+		return _store.data;
+	}
 };
 var microEvent = new MicroEvent();
 var x=new calendarStore();
@@ -124,6 +150,10 @@ AppDispatcher.register(function(payload){
 			selectDay(action.data);
 			x.trigger(CHANGE_EVENT);
 			break;
+		case appConstants.ADD_TASK:
+			addTask(action.data);
+			x.trigger(CHANGE_EVENT);
+			break
 		default:
 			return true;
 	}
