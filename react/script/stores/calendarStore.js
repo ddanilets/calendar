@@ -17,8 +17,8 @@ function pushTasks(){
 };
 var _tasks=[{
 	year: "2015",
-	monthNum: "11",
-	monthName: "Декабрь",
+	monthNum: "10",
+	monthName: "Ноябрь",
 	num: "1",
 	tasks: [{
 				taskName: '"1"'
