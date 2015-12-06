@@ -108,7 +108,7 @@ var addTask= function(data){
 		};
 	});
 	if (flag){
-		_tasks.push([{year:"",monthName:"",monthNum:"",num:"",tasks:[{}]}]);
+		_tasks.push([{year:"",monthName:"",monthNum:"",num:"",tasks:[{taskName:"",taskHolders:"",taskDescription:""}]}]);
 		_tasks[_tasks.length-1].year=data.year;
 		_tasks[_tasks.length-1].monthName=data.monthName;
 		_tasks[_tasks.length-1].monthNum=data.monthNum;
