@@ -16,13 +16,13 @@ function pushTasks(){
 	localStorage["Tasks"]=serEvents;
 };
 var _tasks=[{
-	year: "",
-	monthNum: "",
-	monthName: "",
-	num: "",
+	year: "2015",
+	monthNum: "12",
+	monthName: "Декабрь",
+	num: "5",
 	holiday: "",
 	tasks: [{
-				taskName: '""'
+				taskName: '"1"'
 			}]
 }];
 pullTasks();
@@ -85,6 +85,7 @@ var updateMonth = function(update) {
 
 };
 var calendarStore = function(){ 
+	pullTasks();
 	var self=this;
 	this.addChangeListener= function(cb) {
 		this.bind(CHANGE_EVENT, cb);
