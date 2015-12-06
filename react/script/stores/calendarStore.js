@@ -106,6 +106,7 @@ var addTask= function(data){
 	if (flag){
 		_tasks[_tasks.length]=data;
 	};
+	pushTasks();
 };
 var calendarStore = function(){ 
 	pullTasks();
