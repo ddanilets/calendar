@@ -37,7 +37,7 @@ var _store = {
 	},
 	selectedDay: {
 		year: "",
-		month: ""
+		month: "",
 		num: "",
 		tasks: []
 	},
