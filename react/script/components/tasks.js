@@ -1,17 +1,20 @@
 /** @jsx React.DOM */
 var Tasks = React.createClass({
 	render: function() {
-		if (this.props.tasks.length > 0) {
-			var classes = "task"
-			var tasks=[];
-			var allTasks=this.props.tasks;
-			allTasks.tasks.forEach(function(task,i,allTasks) {
-					tasks[tasks.lenght]=(<h3 className={classes}>{task.taskName}</h3>);
-			});
-
+		if (this.props.tasks!=undefined){
+			if (this.props.tasks.length > 0) {
+				var classes = "task";
+				var tasks=this.props.tasks.map(function(task){
+					return (<h3 className={classes}>{task.taskName}</h3>);
+				});
+	
+			}
+			else {
+				var tasks = [];
+			}
 		}
-		else {
-			var tasks = [];
+		else{
+			var tasks=[];
 		}
 	
 		return (
