@@ -46,9 +46,10 @@ var Month = React.createClass({
 				num: days1[index].num,
 			}
 		});
+		var self=this;
 		var tasks = days.map(function(day, index) {
 				var dayTasks=[];
-				this.props.tasks.forEach(function(item,key,Array){
+				self.props.tasks.forEach(function(item,key,Array){
 					if (item.year==day.year&&item.monthNum==day.monthNum&&item.num==day.num)
 					{
 						dayTasks[dayTasks.length]=item;
