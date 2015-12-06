@@ -22,7 +22,7 @@ var _tasks=[{
 	num: "1",
 	tasks: [{
 				taskName: "Новое задание",
-				taskHolder: "Я",
+				taskHolders: "Я",
 				taskDescription: "Описание"
 			}]
 }];
