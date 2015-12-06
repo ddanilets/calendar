@@ -7,7 +7,7 @@ var AddTask = React.createClass({
 	getInitialState: function() {
 		return ({
 			name: "",
-			date: this.props.selectedDay.num+'.'this.props.selectedDay.monthNum+'.'this.props.selectedDay.year.slice(2,4),
+			date: this.props.selectedDay.num+'.'+this.props.selectedDay.monthNum+'.'+this.props.selectedDay.year.slice(2,4),
 			holders: "",
 			description: ""
 		})
