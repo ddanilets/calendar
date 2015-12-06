@@ -49,7 +49,7 @@ var Month = React.createClass({
 		var self=this;
 		var tasks = days.map(function(day, index) {
 				var allTasks=self.props.tasks;
-				var dayTasks=allTasks.filter( function(item,i,allTasks){
+				var dayTasks=allTasks.filter( function(item,key,allTasks){
 					var i=item.year==day.year&&item.monthNum==day.monthNum&&item.num==day.num;
 					return i;
 				})
@@ -58,7 +58,7 @@ var Month = React.createClass({
 					monthNum: day.monthNum,
 					monthName: day.monthName,
 					num: day.num,
-					tasks: dayTasks
+					tasks: dayTasks[0].tasks
 				})
 		});
 		return (

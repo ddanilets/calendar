@@ -5,7 +5,7 @@ var Tasks = React.createClass({
 			var classes = "task"
 			var tasks=[];
 			var allTasks=this.props.tasks;
-			allTasks.forEach(function(task,i,allTasks) {
+			allTasks.tasks.forEach(function(task,i,allTasks) {
 					tasks[tasks.lenght]=(<h3 className={classes}>{task.taskName}</h3>);
 			});
 
