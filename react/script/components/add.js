@@ -5,6 +5,7 @@ var AddTask = React.createClass({
 		calendarActions.addTask(e.target.value);
 	},
 	render: function() {
+		var self = this;
 		return (
 			<div className="add-task">
 				<h2>Add task</h2>
