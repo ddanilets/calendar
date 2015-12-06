@@ -108,6 +108,7 @@ var addTask= function(data){
 		};
 	});
 	if (flag){
+		_tasks[_tasks.lenght]=[{year:"",monthName:"",monthNum:"",num:"",tasks:[{}]}];
 		_tasks[_tasks.length].year=data.year;
 		_tasks[_tasks.length].monthName=data.monthName;
 		_tasks[_tasks.length].monthNum=data.monthNum;
