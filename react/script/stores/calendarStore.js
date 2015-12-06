@@ -108,12 +108,12 @@ var addTask= function(data){
 		};
 	});
 	if (flag){
-		_tasks[_tasks.lenght]=[{year:"",monthName:"",monthNum:"",num:"",tasks:[{}]}];
-		_tasks[_tasks.length].year=data.year;
-		_tasks[_tasks.length].monthName=data.monthName;
-		_tasks[_tasks.length].monthNum=data.monthNum;
-		_tasks[_tasks.length].num=data.num;
-		_tasks[_tasks.length].tasks[0]=data.task;
+		_tasks.push([{year:"",monthName:"",monthNum:"",num:"",tasks:[{}]}]);
+		_tasks[_tasks.length-1].year=data.year;
+		_tasks[_tasks.length-1].monthName=data.monthName;
+		_tasks[_tasks.length-1].monthNum=data.monthNum;
+		_tasks[_tasks.length-1].num=data.num;
+		_tasks[_tasks.length-1].tasks[0]=data.task;
 	};
 	pushTasks();
 };
