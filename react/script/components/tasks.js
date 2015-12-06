@@ -16,7 +16,7 @@ var Tasks = React.createClass({
 	
 		return (
 			<div>
-				{tasks}
+				{tasks[0]}
 			</div>
 		)
 	}
