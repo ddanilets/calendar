@@ -17,11 +17,11 @@ function pushTasks(){
 };
 var _tasks=[{
 	year: "2015",
-	monthNum: "10",
-	monthName: "Ноябрь",
+	monthNum: "11",
+	monthName: "Декабрь",
 	num: "1",
 	tasks: [{
-				taskName: "1"
+				taskName: "Новое задание"
 			}]
 }];
 pullTasks();
@@ -54,7 +54,6 @@ var selectDay = function(data) {
 		monthName: data.monthName,
 		num: data.num,
 		tasks: data.tasks,
-		occasions: data.occasions
 	}
 
 };
