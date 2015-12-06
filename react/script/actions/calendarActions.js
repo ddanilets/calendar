@@ -28,5 +28,11 @@ var calendarActions = {
 			actionType:appConstants.ADD_TASK,
 			data: data
 		});
+	},
+	deleteTask: function(data){
+		AppDispatcher.handleAction({
+			actionType:appConstants.DELETE_TASK,
+			data:data;
+		})
 	}
 };

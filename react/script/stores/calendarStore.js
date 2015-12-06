@@ -99,6 +99,15 @@ var updateMonth = function(update) {
 	}
 
 };
+var deleteTask=function(task){
+	var q;
+	_tasks.forEach(function(item,key,_tasks){
+		if (item==task)
+			q=key;
+	});
+	arr.splice(q,1);
+	pushTasks();
+};
 var addTask= function(data){
 	var flag=true;
 	_tasks.forEach(function(item,key,_tasks){
@@ -163,7 +172,10 @@ AppDispatcher.register(function(payload){
 		case appConstants.ADD_TASK:
 			addTask(action.data);
 			x.trigger(CHANGE_EVENT);
-			break
+			break;
+		case appConstants.DELETE_TASK:
+			deleteTask(action.data);
+			x.trigger(CHANGE_EVENT);
 		default:
 			return true;
 	}
