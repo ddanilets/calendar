@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 var TaskList = React.createClass({
 	 componentWillMount: function() {
-		 calendarActions.selectDay(null, this.props.days[this.props.moment.today])
+		 calendarActions.selectDay(null, this.props.days[this.props.moment.today+this.props.moment.getDay()])
 	 },
 	render: function() {
 		return (
