@@ -5,7 +5,7 @@ var Tasks = React.createClass({
 			if (this.props.tasks.length > 0) {
 				var classes = "task";
 				var tasks=this.props.tasks.map(function(task){
-					return (<h3 className={classes}>{task.taskName}</h3>);
+					return (<h3 className={classes}><span id="taskName">{task.taskName}<span id="taskHolders">{task.taskHolders}</span><span id="taskDescription">{task.taskDescription}</span></h3>);
 				});
 	
 			}

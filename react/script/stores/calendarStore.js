@@ -21,7 +21,9 @@ var _tasks=[{
 	monthName: "Декабрь",
 	num: "1",
 	tasks: [{
-				taskName: "Новое задание"
+				taskName: "Новое задание",
+				taskHolder: "Я",
+				taskDescription: "Описание"
 			}]
 }];
 pullTasks();
