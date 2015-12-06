@@ -21,7 +21,7 @@ var _tasks=[{
 	monthName: "Ноябрь",
 	num: "1",
 	tasks: [{
-				taskName: '"1"'
+				taskName: "1"
 			}]
 }];
 pullTasks();
