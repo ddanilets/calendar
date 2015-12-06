@@ -33,7 +33,7 @@ var Month = React.createClass({
 		calendarActions.updateMonth(update);
 	},
 	render: function() {
-
+		var self=this;
 		var calendar = new Calendar();
 
 		var days1 = calendar.itermonthdates(this.props.moment.year, this.props.moment.num);
@@ -48,7 +48,7 @@ var Month = React.createClass({
 		});
 		var tasks = days.map(function(day, index) {
 				var dayTasks=[];
-				this.props.tasks.forEach(function(item,key,this.props.tasks){
+				this.props.tasks.forEach(function(item,key,self.props.tasks){
 					if (item.year==day.year&&item.monthNum==day.monthNum&&item.num==day.num)
 					{
 						dayTasks[dayTasks.length]=item;
