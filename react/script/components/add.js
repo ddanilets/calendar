@@ -6,6 +6,7 @@ var AddTask = React.createClass({
 	},
 	render: function() {
 		var self = this;
+		var data;
 		return (
 			<div className="add-task">
 				<h2>Add task</h2>
