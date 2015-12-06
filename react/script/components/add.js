@@ -53,7 +53,7 @@ var AddTask = React.createClass({
 				<input type="text" value={self.state.date} onChange={self.setDate}  placeholder="Search here" />
 				<input type="text" value={self.state.holders} onChange={self.setHolders}  placeholder="Search here" />
 				<input type="text" value={self.state.description} onChange={self.setDescription}  placeholder="Search here" />
-				<div className="add-button" onClick={self.click()}>
+				<div className="add-button" onClick={self.click}>
 					
 				</div>
 			</div>
