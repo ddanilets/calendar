@@ -8,10 +8,10 @@ var AddTask = React.createClass({
 		return (
 			<div className="add-task">
 				<h2>Add task</h2>
-				<input type="text" value={}  placeholder="Search here" />
-				<input type="text" value={}  placeholder="Search here" />
-				<input type="text" value={}  placeholder="Search here" />
-				<input type="text" value={}  placeholder="Search here" />
+				<input type="text" value=""  placeholder="Search here" />
+				<input type="text" value=""  placeholder="Search here" />
+				<input type="text" value=""  placeholder="Search here" />
+				<input type="text" value=""  placeholder="Search here" />
 				<div className="add-button" onClick={self.handleAdd.bind(null,data)}>
 					
 				</div>
