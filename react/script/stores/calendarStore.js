@@ -19,7 +19,7 @@ var _tasks=[{
 	year: "2015",
 	monthNum: "11",
 	monthName: "Декабрь",
-	num: "5",
+	num: "1",
 	tasks: [{
 				taskName: '"1"'
 			}]
