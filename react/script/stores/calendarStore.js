@@ -36,9 +36,9 @@ var _store = {
 		year: new Date().getFullYear()
 	},
 	selectedDay: {
-		year: 0,
-		month: 0,
-		num: 0,
+		year: "",
+		month: ""
+		num: "",
 		tasks: []
 	},
 	search: ''
