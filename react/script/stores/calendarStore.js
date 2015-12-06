@@ -12,6 +12,10 @@ function pullTasks(){
 	}
 };
 function pushTasks(){
+	if (_tasks[0].year=="")
+	{
+		_tasks.splice(0,1);
+	}
 	var serEvents = JSON.stringify(_tasks);
 	localStorage["Tasks"]=serEvents;
 };
