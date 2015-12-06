@@ -21,7 +21,7 @@ var TaskSearch = React.createClass({
 			});
 
 			newDaysList = newDaysList.map(function(day, index) {
-				return (<li key={index}>{day.monthName} {day.num}</li>)
+				return (<li key={index}>{day.num} {day.monthName} {day.year} {day.tasks[index].taskName}</li>)
 			});
 
 		}	
