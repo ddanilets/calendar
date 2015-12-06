@@ -35,7 +35,7 @@ var Month = React.createClass({
 	render: function() {
 		var self=this;
 		var calendar = new Calendar();
-
+		pullTasks();
 		var days1 = calendar.itermonthdates(this.props.moment.year, this.props.moment.num);
 		var days = calendar.itermonthdates(this.props.moment.year, this.props.moment.num);
 		days.forEach(function(value,index,days){

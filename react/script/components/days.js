@@ -4,6 +4,7 @@ var Days = React.createClass({
 		calendarActions.selectDay(index, day);
 	},
 	render: function() {
+		pullTasks();
 		var self = this;
 		var days = this.props.days.map(function(day, index) {
 			var classes="day";

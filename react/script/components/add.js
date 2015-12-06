@@ -5,7 +5,7 @@ var AddTask = React.createClass({
 		var self=this;
 		var date=self.state.date;
 		var day=date.slice(0,2);
-		var monthNum=date.slice(3,5);
+		var monthNum=date.slice(3,5)-1;
 		var year=20+date.slice(6,8);
 		var data={
 			year: year,
@@ -52,7 +52,13 @@ var AddTask = React.createClass({
 				<input type="text" value={self.state.date} onChange={self.setDate}  placeholder="Search here" />
 				<input type="text" value={self.state.holders} onChange={self.setHolders}  placeholder="Search here" />
 				<input type="text" value={self.state.description} onChange={self.setDescription}  placeholder="Search here" />
-				<div className="add-button" onClick={self.handleAdd.bind(null)}>
+				<div className="add-button" style="
+    position: absolute;
+    left: 800px;
+    background: aliceblue;
+    width: 20px;
+    height: 20px;
+"onClick={self.handleAdd.bind(null)}>
 					
 				</div>
 			</div>

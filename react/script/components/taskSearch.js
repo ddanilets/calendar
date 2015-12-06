@@ -5,6 +5,7 @@ var TaskSearch = React.createClass({
 		calendarActions.changeSearch(e.target.value);
 	},
 	render: function() {
+		pullTasks();
 		var search = this.props.search.toLowerCase();
 
 		if(search.length > 0) {

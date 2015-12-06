@@ -16,14 +16,14 @@ function pushTasks(){
 	localStorage["Tasks"]=serEvents;
 };
 var _tasks=[{
-	year: "2015",
-	monthNum: "11",
-	monthName: "Декабрь",
-	num: "1",
+	year: "",
+	monthNum: "",
+	monthName: "",
+	num: "",
 	tasks: [{
-				taskName: "Новое задание",
-				taskHolders: "Я",
-				taskDescription: "Описание"
+				taskName: "",
+				taskHolders: "",
+				taskDescription: ""
 			}]
 }];
 pullTasks();
