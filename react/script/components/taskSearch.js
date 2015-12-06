@@ -11,7 +11,7 @@ var TaskSearch = React.createClass({
 
 			var newDaysList = this.props.days.filter(function(day) {
 
-				var taskList = day.filter(function(task) {
+				var taskList = day.tasks.filter(function(task) {
 					return task.taskName.toLowerCase().match(search);
 				});
 

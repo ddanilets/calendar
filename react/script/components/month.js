@@ -86,7 +86,7 @@ var Month = React.createClass({
 					<TaskList moment={this.props.moment} days={tasks} selectedDay={this.props.selectedDay}/>
 				</div>
 				<div className="task-search">
-					<TaskSearch search={this.props.search} days={tasks}/>
+					<TaskSearch search={this.props.search} days={self.props.tasks}/>
 				</div>
 			</div>
 		)
