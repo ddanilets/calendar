@@ -53,12 +53,14 @@ var Month = React.createClass({
 					var i=item.year==day.year&&item.monthNum==day.monthNum&&item.num==day.num;
 					return i;
 				})
+				if (dayTasks.length==0)
+					dayTasks=[{}];
 				return( {
 					year: day.year,
 					monthNum: day.monthNum,
 					monthName: day.monthName,
 					num: day.num,
-					tasks: dayTasks.tasks
+					tasks: dayTasks[0].tasks
 				})
 		});
 		return (
