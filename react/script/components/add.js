@@ -31,16 +31,28 @@ var AddTask = React.createClass({
 		}
 		self.handleAdd.bind(null,data);
 	},
+	setName:function(e){
+		setState({name:e.target.value})
+	},
+	setDate:function(e){
+		setState({date:e.target.value})
+	},
+	setHolders:function(e){
+		setState({holders:e.target.value})
+	},
+	setDescription:function(e){
+		setState({description:e.target.value})
+	},
 	render: function() {
 		var self = this;
 		
 		return (
 			<div className="add-task">
 				<h2>Add task</h2>
-				<input type="text" value={self.state.name}  placeholder="Search here" />
-				<input type="text" value={self.state.date}  placeholder="Search here" />
-				<input type="text" value={self.state.holders}  placeholder="Search here" />
-				<input type="text" value={self.state.description}  placeholder="Search here" />
+				<input type="text" value={self.state.name} onChange={setName(e)}  placeholder="Search here" />
+				<input type="text" value={self.state.date} onChange={setDate(e)}  placeholder="Search here" />
+				<input type="text" value={self.state.holders} onChange={setHolders(e)}  placeholder="Search here" />
+				<input type="text" value={self.state.description} onChange={setDescription(e)}  placeholder="Search here" />
 				<div className="add-button" onClick={self.click()}>
 					
 				</div>
