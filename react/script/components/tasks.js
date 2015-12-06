@@ -3,10 +3,10 @@ var Tasks = React.createClass({
 	render: function() {
 		if (this.props.tasks.length > 0) {
 			var classes = "task"
-			var tasks = this.props.tasks.map(function(task) {
-				return (
-					<h3 className={classes}>{task.taskName}</h3>
-				)
+			var tasks=[];
+			var allTasks=this.props.tasks;
+			allTasks.forEach(function(task,i,allTasks) {
+					tasks[tasks.lenght]=(<h3 className={classes}>{task.taskName}</h3>);
 			});
 
 		}
