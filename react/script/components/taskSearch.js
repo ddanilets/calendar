@@ -29,7 +29,7 @@ var TaskSearch = React.createClass({
 
 		return (
 			<div className="task-search-header">
-				<h2>Search for Tasks & Occasions</h2>
+				<h2>Search for Tasks</h2>
 				<input type="text" value={this.props.search} onChange={this.handleChange} placeholder="Search here" />
 				<h2 className="results">Matching Dates:</h2>
 					<ul>

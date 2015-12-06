@@ -48,10 +48,10 @@ var AddTask = React.createClass({
 		return (
 			<div className="add-task">
 				<h2>Add task</h2>
-				<input type="text" value={self.state.name} onChange={self.setName}  placeholder="Search here" />
-				<input type="text" value={self.state.date} onChange={self.setDate}  placeholder="Search here" />
-				<input type="text" value={self.state.holders} onChange={self.setHolders}  placeholder="Search here" />
-				<input type="text" value={self.state.description} onChange={self.setDescription}  placeholder="Search here" />
+				<input type="text" value={self.state.name} onChange={self.setName}  placeholder="name" />
+				<input type="text" value={self.state.date} onChange={self.setDate}  placeholder="date" />
+				<input type="text" value={self.state.holders} onChange={self.setHolders}  placeholder="visitors" />
+				<input type="text" value={self.state.description} onChange={self.setDescription}  placeholder="description" />
 				<div className="add-button" onClick={self.handleAdd.bind(null)}>
 					
 				</div>
