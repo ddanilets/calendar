@@ -9,7 +9,7 @@ var Days = React.createClass({
 			var classes="day";
 			var tasks = day.tasks;
 
-			if(self.props.moment.todayYear == day.year && self.props.moment.todayMonth == day.monthName && self.props.moment.today == day.num) {
+			if(self.props.moment.todayYear == day.year && self.props.moment.todayMonth == day.month && self.props.moment.today == day.num) {
 				classes += ' today';
 			}
 
