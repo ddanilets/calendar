@@ -1,8 +1,8 @@
 /** @jsx React.DOM */
 
 var AddTask = React.createClass({
-	handleAdd: function(e) {
-		calendarActions.addTask(e.target.value);
+	handleAdd: function(data) {
+		calendarActions.addTask(data);
 	},
 	getInitialState: function() {
 		return ({
