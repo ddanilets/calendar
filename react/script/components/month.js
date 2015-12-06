@@ -50,10 +50,7 @@ var Month = React.createClass({
 		var tasks = days.map(function(day, index) {
 				var dayTasks=[];
 				self.props.tasks.filter( function(item){
-					if (item.year==day.year&&item.monthNum==day.monthNum&&item.num==day.num)
-					{
-						dayTasks[dayTasks.length]=item;
-					}
+					return (item.year==day.year&&item.monthNum==day.monthNum&&item.num==day.num)
 				})
 				return( {
 					year: day.year,
