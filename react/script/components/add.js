@@ -29,7 +29,7 @@ var AddTask = React.createClass({
 				taskDescription: self.state.description
 			}
 		}
-		handleAdd.bind(null,data);
+		self.handleAdd.bind(null,data);
 	},
 	render: function() {
 		var self = this;
