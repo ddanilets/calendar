@@ -32,16 +32,16 @@ var AddTask = React.createClass({
 		self.handleAdd.bind(null,data);
 	},
 	setName:function(e){
-		setState({name:e.target.value})
+		this.setState({name:e.target.value})
 	},
 	setDate:function(e){
-		setState({date:e.target.value})
+		this.setState({date:e.target.value})
 	},
 	setHolders:function(e){
-		setState({holders:e.target.value})
+		this.setState({holders:e.target.value})
 	},
 	setDescription:function(e){
-		setState({description:e.target.value})
+		this.setState({description:e.target.value})
 	},
 	render: function() {
 		var self = this;
