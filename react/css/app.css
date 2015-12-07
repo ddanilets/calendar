@@ -6,7 +6,7 @@ html {
 
 #app {
   width: 100%;
-/*   height: auto; */
+  height: 150%;
   box-sizing: border-box;
   font-family: "Muli", sans-serif;
 }
