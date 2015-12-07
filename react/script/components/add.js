@@ -6,7 +6,7 @@ var AddTask = React.createClass({
 		var date=self.state.date;
 		var day=date.slice(0,2);
 		var monthNum=date.slice(3,5)-1;
-		var year=20+date.slice(6,8);
+		var year=date.slice(6,10);
 		var data={
 			year: year,
 			monthNum: monthNum,
@@ -49,7 +49,7 @@ var AddTask = React.createClass({
 			<div className="add-task1">
 				<h2>Добавить событие</h2>
 				<input type="text" value={self.state.name} onChange={self.setName}  placeholder="Название" />
-				<input type="text" value={self.state.date} onChange={self.setDate}  placeholder="Дата(ДД.ММ.ГГ)" />
+				<input type="text" value={self.state.date} onChange={self.setDate}  placeholder="Дата(ДД.ММ.ГГГГ)" />
 				<input type="text" value={self.state.holders} onChange={self.setHolders}  placeholder="Участники" />
 				<input type="text" value={self.state.description} onChange={self.setDescription}  placeholder="Описание" />
 				<div className="add-button" onClick={self.handleAdd.bind(null)}>
