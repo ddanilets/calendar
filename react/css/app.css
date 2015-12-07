@@ -199,7 +199,7 @@ html {
 #app .day .info h3.task.help {
   border-left: 5px solid #FA3E67;
 }
-#.add-task{
+.add-task{
 position:absolute;
 left:100%;
 top:6%;
