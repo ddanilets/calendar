@@ -30,7 +30,7 @@ var TaskSearch = React.createClass({
 		return (
 			<div className="task-search-header">
 			<h2>Поиск события</h2>
-				<input type="text" value={this.props.search} onChange={this.handleChange} placeholder="Название, или участники" />
+				<input type="text" value={this.props.search} onChange={this.handleChange} placeholder="Название, участники, или дата" />
 					<ul>
 						{newDaysList}
 					</ul>
