@@ -6,7 +6,7 @@ html {
 
 #app {
   width: 100%;
-  height: auto;
+/*   height: auto; */
   box-sizing: border-box;
   font-family: "Muli", sans-serif;
 }
@@ -181,20 +181,6 @@ html {
   top: 0.5rem;
   right: 0.5rem;
 }
-#app .day .holidays {
-  position: absolute;
-  bottom: 5.0rem;
-  width: 95%;
-}
-#app .day .holidays h3 {
-  margin: 0 0 0.1rem 0;
-  text-align: left;
-  font-size: 0.6rem;
-  background-color: #E0DFE1;
-  color: #919092;
-  padding-left: 0.5rem;
-  border-left: 5px solid #71DCCF;
-}
 #app .day .info {
   position: absolute;
   bottom: 1.0rem;
@@ -207,9 +193,6 @@ html {
   background-color: #E0DFE1;
   color: #919092;
   padding-left: 0.5rem;
-}
-#app .day .info h3.occasion {
-  border-left: 5px solid #FCB258;
 }
 #app .day .info h3.task {
   border-left: 5px solid #8C88FC;
