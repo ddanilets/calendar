@@ -32,7 +32,7 @@ var calendarActions = {
 	deleteTask: function(data){
 		AppDispatcher.handleAction({
 			actionType:appConstants.DELETE_TASK,
-			data:data
+			data: data
 		})
 	}
 };

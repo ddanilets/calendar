@@ -60,7 +60,7 @@ var Month = React.createClass({
 					monthNum: day.monthNum,
 					monthName: day.monthName,
 					num: day.num,
-					tasks: dayTasks[0].tasks
+					tasks: dayTasks[0]
 				})
 		});
 		return (
