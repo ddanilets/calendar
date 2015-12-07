@@ -53,7 +53,7 @@ var AddTask = React.createClass({
 				<input type="text" value={self.state.holders} onChange={self.setHolders}  placeholder="visitors" />
 				<input type="text" value={self.state.description} onChange={self.setDescription}  placeholder="description" />
 				<div className="add-button" onClick={self.handleAdd.bind(null)}>
-					
+					Добавить событие
 				</div>
 			</div>
 		)
