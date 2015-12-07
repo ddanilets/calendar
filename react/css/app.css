@@ -25,13 +25,13 @@ html {
   width:70%;
   color:rgba(0,0,0,0.5);
   border-radius:1px;
+  z-index:-1;
 }
 #app .task-list {
   border: 1px solid black;
   float: left;
   text-align: center;
   margin-bottom: 1.5rem;
-  position:absolute;
   left:100%;
   top:6%;
   display:block;
@@ -40,7 +40,6 @@ html {
   background:#fff;
   padding:2%;
   box-shadow: 0px 0px 21px 4px #b5b5b5;
-  z-index:1000;
 }
 }
 #app .task-list .task-list-header h2 {
@@ -64,10 +63,10 @@ html {
   font-size: 0.6rem;
 }
 #app .task-search {
-  border: 1px solid black;
   width: 30%;
   float: left;
   text-align: center;
+  z-index:1;
 }
 #app .task-search .task-search-header h2 {
   margin: 0 0 0.5rem 0;
@@ -201,7 +200,6 @@ html {
   border-left: 5px solid #FA3E67;
 }
 .add-task{
-position:absolute;
 left:100%;
 top:6%;
 display:block;
