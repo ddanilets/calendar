@@ -63,6 +63,7 @@ html {
   font-size: 0.6rem;
 }
 #app .task-search {
+position:absolute;
   width: 30%;
   float: left;
   text-align: center;
