@@ -13,7 +13,7 @@ var TaskSearch = React.createClass({
 			var newDaysList = this.props.days.filter(function(day) {
 
 				var taskList = day.tasks.filter(function(task) {
-					return task.taskName.toLowerCase().match(search)||task.taskHolders.toLowerCase().match(search);
+					return task.taskName.toLowerCase().match(search)||task.taskHolders.toLowerCase().match(search)||day.monthNum.toLowerCase().match(search)||day.num.toLowerCase().match(search)||day.year.toLowerCase().match(search);
 				});
 
 
@@ -22,7 +22,7 @@ var TaskSearch = React.createClass({
 			});
 
 			newDaysList = newDaysList.map(function(day, index) {
-				return (<li key={index}>{day.num} {day.monthName} {day.year} {day.tasks[index].taskName}</li>)
+				return (<li key={index}>{day.num} {day.monthName} {day.year} {day.tasks[index].taskName} {day.tasks[index].taskHolders}</li>)
 			});
 
 		}	
