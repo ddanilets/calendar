@@ -46,7 +46,7 @@ var AddTask = React.createClass({
 		var self = this;
 		
 		return (
-			<div className="add-task">
+			<div className="add-task1">
 				<h2>Add task</h2>
 				<input type="text" value={self.state.name} onChange={self.setName}  placeholder="name" />
 				<input type="text" value={self.state.date} onChange={self.setDate}  placeholder="date" />
