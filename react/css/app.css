@@ -158,13 +158,14 @@ html {
 #app .day.last {
   border-right: none;
 }
-#app .day.today span.num {
-  background-color: #BA77FF;
-  color: white;
+#app .day.today{
+  background-color:rgba(244,244,244,1);
+  color:rgb(134,134,134);
 }
 #app .day.selected span.num {
   background-color: #00B9FF;
   color: white;
+  
 }
 #app .day span.num {
   display: inline-block;
