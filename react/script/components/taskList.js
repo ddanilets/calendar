@@ -6,7 +6,7 @@ var TaskList = React.createClass({
 	render: function() {
 		return (
 				<div className="task-list-header">
-					<h2>Список событий на {this.props.selectedDay.num} {_monthsRelative[this.props.selectedDay.month+1]} </h2>
+					<h2>Список событий на {this.props.selectedDay.num} {_monthsRelative[parseInt(this.props.selectedDay.month)+1]} </h2>
 					<div className="tasks">
 						<h2>События</h2>
 						<Tasks tasks={this.props.selectedDay.tasks} />
