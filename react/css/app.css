@@ -224,11 +224,15 @@ html {
   margin-bottom: 1.5rem;
 }
 .add-button{
-margin-bottom:1.5rem;
-margin-top:1.5rem;
-width:30%;
-height:2.5vw;
-background:deepskyblue;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    width: 40%;
+    height: 2vw;
+    background: deepskyblue;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 30%;
+    padding-top: 1.8%;
 }
 #app .add-task input {
   margin: 0.5rem;
