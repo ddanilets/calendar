@@ -71,13 +71,13 @@ var Month = React.createClass({
 					</div>
 					<div id="days-header">
 							<ul>
-								<li>Monday</li>
-								<li>Tuesday</li>
-								<li>Wednesday</li>
-								<li>Thursday</li>
-								<li>Friday</li>
-								<li>Saturday</li>
-								<li>Sunday</li>
+								<li>Понедельник</li>
+								<li>Вторник</li>
+								<li>Среда</li>
+								<li>Четверг</li>
+								<li>Пятница</li>
+								<li>Суббота</li>
+								<li>Воскресенье</li>
 							</ul>
 					</div>
 					<Days moment={this.props.moment} days={tasks} selectedDay={this.props.selectedDay} />
