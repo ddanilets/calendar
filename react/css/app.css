@@ -224,8 +224,10 @@ html {
   margin-bottom: 1.5rem;
 }
 .add-button{
-width:auto;
-height:1vw;
+margin-bottom:1.5rem;
+margin-top:1.5rem;
+width:30%;
+height:2.5vw;
 background:deepskyblue;
 }
 #app .add-task input {
