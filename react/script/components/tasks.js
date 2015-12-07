@@ -10,7 +10,7 @@ var Tasks = React.createClass({
 				var classes = "task";
 				var task1=self.props.tasks;
 				var tasks=this.props.tasks.tasks.map(function(task){
-					return (<h3 className={classes}><span id="taskName">{task.taskName}</span><span id="taskHolders">{task.taskHolders}</span><span id="delete" onclick={self.handleDeleteTask.bind(null,task1)}>-----</span></h3>);
+					return (<h3 className={classes}><span id="taskName">{task.taskName}</span><span id="taskHolders">{task.taskHolders}</span><span id="delete" onclick={self.handleDeleteTask.bind(null,task1)}></span></h3>);
 				});
 	
 			}
